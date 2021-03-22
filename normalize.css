@@ -1,6 +1,6 @@
 HTML, main, body, div, h1, a, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td, header, nav, article, footer {
     border: none;
-    font-family: "Î˘ČíŃĹşÚ", "şÚĚĺ", "ËÎĚĺ";
+    font-family: "微软雅黑", "黑体", "宋体";
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -40,13 +40,13 @@ input {
     padding: 0;
 }
 
-/* --ÇĺłýbaidušČ¸čäŻzhiŔŔĆ÷ĎÂľÄdaozhuan?search?˛ćşĹ */
+/* --清除baidu谷歌浏zhi览器下的daozhuan?search?叉号 */
 
 input::-webkit-search-cancel-button {
     display: none;
 }
 
-/* --ÇĺłýIEĎÂľÄ?search?˛ćşĹ */
+/* --清除IE下的?search?叉号 */
 
 input[type=search]::-ms-clear {
     display: none;
@@ -82,7 +82,7 @@ ul, ol, li {
     list-style-type: none;
 }
 
-/*šŤš˛ˇ˝ˇ¨*/
+/*公共方法*/
 
 .w {
     width: 1200px;
