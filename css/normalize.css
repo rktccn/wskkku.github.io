@@ -1,4 +1,4 @@
-HTML, main, body, div, h1, a, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td, header, nav, article, footer {
+* {
     border: none;
     font-family: "微软雅黑", "黑体", "宋体";
     margin: 0px;
