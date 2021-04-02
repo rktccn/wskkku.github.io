@@ -1,4 +1,4 @@
-//视察效果(速率，起始点，结束点)
+//视察效果(速率，起始点，结束点,初始top值)
 
 function parallax(rate, s, e, t) {
     var ParallaxS = document.querySelector('.parallax-crolling')
