@@ -15,6 +15,5 @@ function parallax(rate, s, e, t) {
             var height = (window.pageYOffset - start) * rate
         ParallaxS.style.top = top + height + 'px'
         ParallaxS.style.transitionDuration = '0s'
-        console.log(ParallaxS.style.top);
     })
 }
