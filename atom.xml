@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://wskkku.github.io</id>
+    <id>https://modest-elion-a8e2d8.netlify.app</id>
     <title>RoFty</title>
-    <updated>2021-05-08T17:04:06.787Z</updated>
+    <updated>2021-05-08T17:09:44.439Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://wskkku.github.io"/>
-    <link rel="self" href="https://wskkku.github.io/atom.xml"/>
+    <link rel="alternate" href="https://modest-elion-a8e2d8.netlify.app"/>
+    <link rel="self" href="https://modest-elion-a8e2d8.netlify.app/atom.xml"/>
     <subtitle>芜湖 起飞🛫</subtitle>
-    <logo>https://wskkku.github.io/images/avatar.png</logo>
-    <icon>https://wskkku.github.io/favicon.ico</icon>
+    <logo>https://modest-elion-a8e2d8.netlify.app/images/avatar.png</logo>
+    <icon>https://modest-elion-a8e2d8.netlify.app/favicon.ico</icon>
     <rights>All rights reserved 2021, RoFty</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://wskkku.github.io/post/hellow-gridea/</id>
-        <link href="https://wskkku.github.io/post/hellow-gridea/">
+        <id>https://modest-elion-a8e2d8.netlify.app/post/hellow-gridea/</id>
+        <link href="https://modest-elion-a8e2d8.netlify.app/post/hellow-gridea/">
         </link>
         <updated>2021-05-07T15:55:06.000Z</updated>
         <summary type="html"><![CDATA[<p>👏 欢迎使用 <strong>Gridea</strong> ！<br>
@@ -45,8 +45,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[如果支付宝倒了，我室友花呗欠1000，我余额宝有1000，我可以直接向室友要吗？(测试文章)]]></title>
-        <id>https://wskkku.github.io/post/ru-guo-zhi-fu-bao-dao-liao-wo-shi-you-hua-bai-qian-1000wo-yu-e-bao-you-1000wo-ke-yi-zhi-jie-xiang-shi-you-yao-ma-ce-shi-wen-zhang/</id>
-        <link href="https://wskkku.github.io/post/ru-guo-zhi-fu-bao-dao-liao-wo-shi-you-hua-bai-qian-1000wo-yu-e-bao-you-1000wo-ke-yi-zhi-jie-xiang-shi-you-yao-ma-ce-shi-wen-zhang/">
+        <id>https://modest-elion-a8e2d8.netlify.app/post/ru-guo-zhi-fu-bao-dao-liao-wo-shi-you-hua-bai-qian-1000wo-yu-e-bao-you-1000wo-ke-yi-zhi-jie-xiang-shi-you-yao-ma-ce-shi-wen-zhang/</id>
+        <link href="https://modest-elion-a8e2d8.netlify.app/post/ru-guo-zhi-fu-bao-dao-liao-wo-shi-you-hua-bai-qian-1000wo-yu-e-bao-you-1000wo-ke-yi-zhi-jie-xiang-shi-you-yao-ma-ce-shi-wen-zhang/">
         </link>
         <updated>2021-05-07T15:33:39.000Z</updated>
         <summary type="html"><![CDATA[<p>我问了我室友我室友让我滚☹️</p>
@@ -57,8 +57,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[寝室里有三个卷王是什么感受？(测试文章)]]></title>
-        <id>https://wskkku.github.io/post/qin-shi-li-you-san-ge-juan-wang-shi-shi-me-gan-shou-ce-shi-wen-zhang/</id>
-        <link href="https://wskkku.github.io/post/qin-shi-li-you-san-ge-juan-wang-shi-shi-me-gan-shou-ce-shi-wen-zhang/">
+        <id>https://modest-elion-a8e2d8.netlify.app/post/qin-shi-li-you-san-ge-juan-wang-shi-shi-me-gan-shou-ce-shi-wen-zhang/</id>
+        <link href="https://modest-elion-a8e2d8.netlify.app/post/qin-shi-li-you-san-ge-juan-wang-shi-shi-me-gan-shou-ce-shi-wen-zhang/">
         </link>
         <updated>2021-05-07T15:32:15.000Z</updated>
         <content type="html"><![CDATA[<p>真牛啊</p>
@@ -66,8 +66,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[买了 AirTag 后，你准备放到哪里？(测试文章)]]></title>
-        <id>https://wskkku.github.io/post/mai-liao-airtag-hou-ni-zhun-bei-fang-dao-na-li/</id>
-        <link href="https://wskkku.github.io/post/mai-liao-airtag-hou-ni-zhun-bei-fang-dao-na-li/">
+        <id>https://modest-elion-a8e2d8.netlify.app/post/mai-liao-airtag-hou-ni-zhun-bei-fang-dao-na-li/</id>
+        <link href="https://modest-elion-a8e2d8.netlify.app/post/mai-liao-airtag-hou-ni-zhun-bei-fang-dao-na-li/">
         </link>
         <updated>2021-05-07T15:29:28.000Z</updated>
         <summary type="html"><![CDATA[<p>刚看完苹果的春季发布会，感叹新的iPad Pro搭载M1，真的令人惊叹不已。<br>
@@ -80,8 +80,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[中文排版]]></title>
-        <id>https://wskkku.github.io/post/zhong-wen-pai-ban/</id>
-        <link href="https://wskkku.github.io/post/zhong-wen-pai-ban/">
+        <id>https://modest-elion-a8e2d8.netlify.app/post/zhong-wen-pai-ban/</id>
+        <link href="https://modest-elion-a8e2d8.netlify.app/post/zhong-wen-pai-ban/">
         </link>
         <updated>2021-05-07T14:17:48.000Z</updated>
         <summary type="html"><![CDATA[<p>五月天（Mayday），中国台湾摇滚乐团，成立于1997年3月29日，由温尚翊（怪兽）、陈信宏（阿信）、石锦航（石头）、蔡升晏（玛莎）、刘谚明（冠佑）五名成员组成。</p>
@@ -103,8 +103,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Rofty 主题介绍]]></title>
-        <id>https://wskkku.github.io/post/rofty-zhu-ti-jie-shao/</id>
-        <link href="https://wskkku.github.io/post/rofty-zhu-ti-jie-shao/">
+        <id>https://modest-elion-a8e2d8.netlify.app/post/rofty-zhu-ti-jie-shao/</id>
+        <link href="https://modest-elion-a8e2d8.netlify.app/post/rofty-zhu-ti-jie-shao/">
         </link>
         <updated>2021-05-06T08:50:23.000Z</updated>
         <summary type="html"><![CDATA[<p>这是一个Gridea主题</p>
@@ -239,8 +239,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[markdown 语法]]></title>
-        <id>https://wskkku.github.io/post/test/</id>
-        <link href="https://wskkku.github.io/post/test/">
+        <id>https://modest-elion-a8e2d8.netlify.app/post/test/</id>
+        <link href="https://modest-elion-a8e2d8.netlify.app/post/test/">
         </link>
         <updated>2021-04-30T12:05:08.000Z</updated>
         <summary type="html"><![CDATA[<p>这是一个演示模板</p>
