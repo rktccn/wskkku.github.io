@@ -1,0 +1,1794 @@
+<html lang='zh-CN'>
+
+<head>
+  <meta charset="utf-8" />
+<meta name="viewport"
+  content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>
+  HTML+CSS&lt;按钮风格/&gt; | RoFty
+</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wskkku/wskkku.github.io@main/css/normalize0.0.0.1.css">
+<script src="https://cdn.jsdelivr.net/gh/wskkku/wskkku.github.io@main/js/jQuery.Rokss.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+
+<link rel="shortcut icon" href="https://wskkku.github.io/favicon.ico?v=1620542340737">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://wskkku.github.io/styles/main.css">
+
+<link rel="alternate" type="application/atom+xml" title="HTML+CSS&lt;按钮风格/&gt; | RoFty - Atom Feed"
+  href="https://wskkku.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/atelier_plateau_light.min.css"
+  id="hightLightCode" rel="stylesheet" type="text/css" />
+
+
+<script>
+  var setStyle = function (cssArr) {
+    var i = 0, len = cssArr.length;
+    for (i; i < len; i++) {
+      document.write('<link href="' + cssArr[i] + '" type="text/css" rel=stylesheet>');
+    }
+  };
+
+  if ($.cookie('theme') === 'dark') {
+    $('html').attr('theme', 'dark');
+    $('#hightLightCode').attr('href', '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/atelier_plateau_dark.min.css')
+  } else {
+    $('#hightLightCode').attr('href', '//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/atelier_plateau_light.min.css')
+  }
+
+</script>
+
+
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5JKRHJF7B"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z5JKRHJF7B');
+      </script>
+      
+        
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+            
+    <meta name="description" content="HTML按钮风格
+
+1.赛博朋克风格按钮
+
+    
+        AVAILABLE NOW
+    
+
+html
+&lt;button&gt;AVAILABLE NOW&lt;/button&gt;
+
+css
+body {
+    d..." />
+    <meta name="keywords" content="HTML,编程" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+  <div class="nav-placeholder">
+    <nav class="navbar navbar-expand-lg light-theme">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://wskkku.github.io/favicon.ico?v=1620542340737" width="30" height="30" alt="">
+            </a>
+            <a class="navbar-brand" href="#">
+                RoFty
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list navbar-toggler-icon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    
+                        
+                                <li class="nav-item">
+                                    <a href="https://wskkku.github.io" class="nav-link">
+                                        首页
+                                    </a>
+                                </li>
+                                
+                                    
+                        
+                                <li class="nav-item">
+                                    <a href="/archives" class="nav-link">
+                                        归档
+                                    </a>
+                                </li>
+                                
+                                    
+                        
+                                <li class="nav-item">
+                                    <a href="/tags" class="nav-link">
+                                        标签
+                                    </a>
+                                </li>
+                                
+                                    
+                        
+                                <li class="nav-item">
+                                    <a href="/friends" class="nav-link">
+                                        友链
+                                    </a>
+                                </li>
+                                
+                                    
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0" id="gridea-search-form"
+                    action="https://wskkku.github.io/search/">
+                    <input class="search-input mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q"
+                        autocomplete="off" />
+                    <button class="btn-search my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <div class="theme-change">
+                    <ul>
+                        <i class="bi bi-sun-fill light-theme"></i>
+                        <i class="bi bi-moon-fill dark-theme"></i>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+    <script>
+        var nowTime = new Date()
+        var hour = nowTime.getHours()
+        if (hour >= 19 || hour <= 5 && $.cookie('theme') == undefined) {
+            $.cookie('theme', 'dark', { path: '/' })
+            $('html').attr('theme', 'dark');
+        }
+    </script>
+    
+
+        <script>
+            var themeFlag = 0
+            if ($.cookie('theme') === 'dark') {
+                $('.theme-change').find('ul').css({
+                    'transform': 'translateX(-55px)',
+                    'transition': 'none'
+                })
+                themeFlag = 1
+            }
+
+            $('.theme-change').click(function () {
+                $(this).find('ul').css('transition', '.3s')
+                if (themeFlag == 0) {
+                    $(this).find('ul').css('transform', 'translateX(-55px)');
+                    themeFlag = 1
+                    $.removeCookie('theme', { path: '/' })
+                    $.cookie('theme', 'dark', { path: '/' })
+                    $('html').attr('theme', 'dark');
+                } else {
+                    $(this).find('ul').css('transform', 'translateX(0px)');
+                    themeFlag = 0
+                    $.removeCookie('theme', { path: '/' })
+                    $.cookie('theme', 'light', { path: '/' })
+                    $('html').attr('theme', 'light');
+                }
+            });
+
+            window.addEventListener('scroll', function () {
+                if (this.pageYOffset >= 300) {
+                    $('.navbar').addClass('fixed-top').css({
+                        'background': 'var(--box-bg-color)',
+                        'border-bottom': '2px solid var(--main-color)',
+                    })
+
+                    $('.search-input').css('backgroundColor', 'var(--page-bg-color)')
+                    $('.btn-search').css('backgroundColor', 'var(--page-bg-color)')
+                } else {
+                    $('.navbar').removeClass('fixed-top').css({
+                        'background': 'none',
+                        'border-bottom': 'none',
+                    })
+
+                    $('.search-input').css('backgroundColor', 'var(--box-bg-color)')
+                    $('.btn-search').css('backgroundColor', 'var(--box-bg-color)')
+                }
+            })
+
+            $('.navbar-toggler').click(function () {
+                if (window.pageYOffset < 300) {
+                    if ($(this).attr('aria-expanded') == "false") {
+                        $('.navbar').css({
+                            'background': 'var(--box-bg-color)',
+                            'border-bottom': '2px solid var(--main-color)',
+                        })
+
+                        $('.search-input').css('backgroundColor', 'var(--page-bg-color)')
+                        $('.btn-search').css('backgroundColor', 'var(--page-bg-color)')
+                    } else {
+                        $('.navbar').css({
+                            'background': 'none',
+                            'border-bottom': 'none',
+                        })
+
+                        $('.search-input').css('backgroundColor', 'var(--box-bg-color)')
+                        $('.btn-search').css('backgroundColor', 'var(--box-bg-color)')
+                    }
+                }
+            });
+            console.log($.cookie('theme'));
+        </script>
+
+    <div class="jumbotron">
+
+  
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 d-none d-lg-block"></div>
+          <div class="col-lg-3 col-md-4 col-sm-4 d-none d-sm-block">
+            <div class="avatar"
+              style="background: url('https://wskkku.github.io/images/avatar.png?v=1620542340737');background-size: cover;"
+              alt="">
+              <div class="mask-dark"></div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <h1 class="display-4 title">
+              RoFty
+            </h1>
+            <p class="lead context">
+              芜湖 起飞🛫
+            </p>
+            
+              <a class="btn btn-primary btn-lg" href="https://wskkku.github.io/post/about/" r='btn-hover' role="button"
+                id="about-me">关于我</a>
+              
+          </div>
+        </div>
+      </div>
+</div>
+
+      <div class="container">
+
+        <h2 class="post-title title">
+          HTML+CSS&lt;按钮风格/&gt;
+        </h2>
+
+        <div class="post-info">
+          <span>
+            2021-02-17
+          </span>
+          <span>
+            3654 字数
+          </span>
+          <br>
+          
+            <a href="https://wskkku.github.io/tag/BUHtxhEXI/" class="post-tag">
+              # HTML
+            </a>
+            
+            <a href="https://wskkku.github.io/tag/L6rtCvsbFL/" class="post-tag">
+              # 编程
+            </a>
+            
+        </div>
+
+
+        <div class="post-detail">
+
+          <article class="post">
+            <div class="post-content-wrapper">
+              <div class="row">
+                <div class="post-content  col-lg-9">
+                  <p>HTML按钮风格</p>
+<!-- more -->
+<h2 id="1赛博朋克风格按钮">1.赛博朋克风格按钮</h2>
+<div class="templet-inner">
+    <div class="cyber-button">
+        <button>AVAILABLE NOW</button>
+    </div>
+</div>
+<p><strong>html</strong></p>
+<pre><code>&lt;button&gt;AVAILABLE NOW&lt;/button&gt;
+</code></pre>
+<p><strong>css</strong></p>
+<pre><code>body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background-color: #F8F005;
+}
+
+button, button::after {
+    width: 380px;
+    height: 86px;
+    font-size: 36px;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+}
+
+button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+}
+
+button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
+}
+</code></pre>
+<h2 id="2ios开关">2.ios开关</h2>
+<div class="templet">
+    <div class="templet-inner">
+        <div class="ios-button">
+            <label for="toggle" style="cursor: pointer;" >
+                <input type="checkbox" id="toggle">
+                <span></span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- more -->
+<p><strong>html</strong></p>
+<pre><code>&lt;label for=&quot;toggle&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;toggle&quot;&gt;
+  &lt;span&gt;&lt;/span&gt;
+&lt;/label&gt;
+</code></pre>
+<p><strong>css</strong></p>
+<pre><code>:root {
+  --button-width: 500px;
+  --button-height: 295px;
+  --toggle-diameter: 255px;
+  --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+  --toggle-shadow-offset: 10px;
+  --toggle-wider: 333px;
+  --color-grey: #E9E9E9;
+  --color-dark-grey: #39393D;
+  --color-green: #30D158;
+}
+
+span {
+  display: inline-block;
+  width: var(--button-width);
+  height: var(--button-height);
+  background-color: var(--color-grey);
+  border-radius: calc(var(--button-height) / 2);
+  position: relative;
+  transition: .3s all ease-in-out;
+}
+
+span::after {
+  content: '';
+  display: inline-block;
+  width: var(--toggle-diameter);
+  height: var(--toggle-diameter);
+  background-color: #fff;
+  border-radius: calc(var(--toggle-diameter) / 2);
+  position: absolute;
+  top: var(--button-toggle-offset);
+  transform: translateX(var(--button-toggle-offset));
+  box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, .10);
+  transition: .3s all ease-in-out;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+input[type=&quot;checkbox&quot;]:checked + span {
+  background-color: var(--color-green);
+}
+
+input[type=&quot;checkbox&quot;]:checked + span::after {
+  transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+  box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, .10);
+}
+
+input[type=&quot;checkbox&quot;] {
+  display: none;
+}
+
+input[type=&quot;checkbox&quot;]:active + span::after {
+  width: var(--toggle-wider);
+}
+
+input[type=&quot;checkbox&quot;]:checked:active + span::after {
+  transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+
+@media(prefers-color-scheme: dark) {
+  body {
+    background-color: #1C1C1E;
+  }
+  
+  span {
+    background-color: var(--color-dark-grey);
+  }
+}
+</code></pre>
+<h2 id="3分裂文字效果">3.分裂文字效果</h2>
+<div class="templet-inner">
+    <div class="ftext-button">
+    <div class="a">
+        <div class="b" style="--i:-30">ROI</div>
+        <div class="c" style="--i:30">ROI</div>
+        <a href="#" class="d">关注/follow</a>
+    </div>
+   </div>
+ </div>
+<!-- more -->
+<p><strong>html</strong></p>
+<pre><code>&lt;div class=&quot;a&quot;&gt;
+    &lt;div class=&quot;b&quot; style=&quot;--i:-30&quot;&gt;ROI&lt;/div&gt;
+    &lt;div class=&quot;c&quot; style=&quot;--i:30&quot;&gt;ROI&lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;d&quot;&gt;关注/follow&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<p><strong>css</strong></p>
+<pre><code>body {
+    background-color: rgb(189, 207, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.a {
+    position: relative;
+    /* top: 250px; */
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+ .c,  .b {
+    font: 900 100px '';
+    line-height: 150px;
+    position: absolute;
+    color: brown;
+    top: 0;
+    /* 使文字上下移动时有0.4s的过渡效果 */
+    transition: .4s;
+}
+
+.c {
+    /* 裁剪文字的上半部分，括号里的四个值分别是
+    top，right，bottom，left */
+    clip-path: inset(49% 0 0 0);
+}
+
+.b {
+    /* 裁剪文字的下半部分 */
+    clip-path: inset(1% 0 50% 0);
+}
+
+.a:hover .b,  .a:hover .c {
+    /* 让--i为30的向上移动30px，-30的向下移动30px
+    这样子就能空出60px留给中间的超链接 */
+    top: calc(var(--i)*1px);
+}
+
+.a:hover .d {
+    opacity: 1;
+}
+
+.d {
+    text-decoration: none;
+    color: cyan;
+    font: 600 30px '';
+    line-height: 150px;
+    opacity: 0;
+    transition: .3s;
+}
+</code></pre>
+<h2 id="4流光溢彩">4.流光溢彩</h2>
+<div class="templet-inner">
+    <div class="button-streamer">
+        <a href="javascript:;">START</a>
+    </div>
+</div>
+<!-- more -->
+<p>html</p>
+<pre><code>&lt;a&gt;START&lt;/a&gt;
+</code></pre>
+<p>css</p>
+<pre><code>@keyframes button-streamer {
+    100% {
+        background-position: -400% 0;
+    }
+}
+
+body {
+    position        : relative;
+    background-color: rgb(17, 17, 17);
+    width           : 100%;
+    height          : 200px;
+}
+
+a {
+    text-decoration: none;
+    position       : absolute;
+    left           : 50%;
+    top            : 50%;
+    transform      : translate(-50%, -50%);
+    font-size      : 24px;
+    background     : linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    width          : 400px;
+    height         : 100px;
+    line-height    : 100px;
+    text-align     : center;
+    color          : white;
+    text-transform : uppercase;
+    border-radius  : 50px;
+    z-index        : 1;
+    animation      : button-streamer 8s infinite;
+}
+
+a::before {
+    content        : &quot;&quot;;
+    position       : absolute;
+    left           : -5px;
+    right          : -5px;
+    bottom         : -5px;
+    top            : -5px;
+    background     : linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b,#03a9f4;
+    background-size: 400%;
+    border-radius  : 50px;
+    filter         : blur(20px);
+    z-index        : -1;
+    animation      : button-streamer 8s infinite;
+}
+
+a:hover::before {
+    animation: button-streamer 4s infinite;
+}
+
+a:hover {
+    animation: button-streamer 4s infinite;
+}
+</code></pre>
+<h2 id="5内旋效果">5.内旋效果</h2>
+<div class="templet-inner">
+    <div class="toin-button">
+        <a href="#">内旋</a>
+    </div>
+</div>
+<!-- more -->
+<p>html</p>
+<pre><code>&lt;div class=&quot;toin-button&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;内旋&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<p>css</p>
+<pre><code>.toin-button {
+    margin         : 0;
+    padding        : 42px 0;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    background     : #2f3542;
+}
+
+.toin-button a {
+    font-size      : 40px;
+    color          : #70a1ff;
+    width          : 100px;
+    height         : 100px;
+    line-height    : 100px;
+    margin         : 0 16px;
+    display        : inline-block;
+    position       : relative;
+    text-align     : center;
+    text-decoration: none;
+    font-size      : 36px;
+    transition     : all .3s ease;
+}
+
+.toin-button a::before,
+.toin-button a::after {
+    content   : &quot;&quot;;
+    position  : absolute;
+    box-sizing: border-box;
+    width     : 100%;
+    height    : 100%;
+    left      : 0;
+    top       : 0;
+    transition: all .3s ease;
+}
+
+.toin-button a:hover {
+    transform: scale(.8);
+}
+
+.toin-button a:hover::before {
+    border-left : 4px solid;
+    border-right: 4px solid;
+    transform   : skewX(20deg);
+}
+
+.toin-button a:hover::after {
+    border-top   : 4px solid;
+    border-bottom: 4px solid;
+    transform    : skewY(-20deg);
+}
+</code></pre>
+<h2 id="6多种效果1">6.多种效果(1)</h2>
+<div class="templet-inner">
+    <div class="button-moreone">
+        <button class="custom-button-moreone btn-2">凹陷</button>
+        <button class="custom-button-moreone btn-3"><span>边框扩展</span></button>
+        <button class="custom-button-moreone btn-4"><span>变暗</span></button>
+        <button class="custom-button-moreone btn-5"><span>边框滑入</span></button>
+        <button class="custom-button-moreone btn-6"><span>透明边框</span></button>
+        <button class="custom-button-moreone btn-7"><span>边框扩展阴影</span></button>
+        <button class="custom-button-moreone btn-8"><span>边框扩展阴影2</span></button>
+        <button class="custom-button-moreone btn-11">变亮<div class="dot"></div></button>
+        <button class="custom-button-moreone btn-12"><span>转翻</span><span>翻转</span></button>
+        <button class="custom-button-moreone btn-13">下切</button>
+        <button class="custom-button-moreone btn-14">上切</button>
+        <button class="custom-button-moreone btn-15">右切</button>
+        <button class="custom-button-moreone btn-16">左切</button>
+    </div>
+</div>
+<!-- more -->
+<p>html</p>
+<pre><code>            &lt;button class=&quot;custom-button-moreone btn-2&quot;&gt;凹陷&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-3&quot;&gt;&lt;span&gt;边框扩展&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-4&quot;&gt;&lt;span&gt;变暗&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-5&quot;&gt;&lt;span&gt;边框滑入&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-6&quot;&gt;&lt;span&gt;透明边框&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-7&quot;&gt;&lt;span&gt;边框扩展阴影&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-8&quot;&gt;&lt;span&gt;边框扩展阴影2&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-11&quot;&gt;变亮&lt;div class=&quot;dot&quot;&gt;&lt;/div&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-12&quot;&gt;&lt;span&gt;转翻&lt;/span&gt;&lt;span&gt;翻转&lt;/span&gt;&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-13&quot;&gt;下切&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-14&quot;&gt;上切&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-15&quot;&gt;右切&lt;/button&gt;
+            &lt;button class=&quot;custom-button-moreone btn-16&quot;&gt;左切&lt;/button&gt;
+</code></pre>
+<p>css</p>
+<pre><code>
+.frame {
+    width     : 90%;
+    margin    : 40px auto;
+    text-align: center;
+    background: #e0e5ec;
+}
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width        : 130px;
+    height       : 40px;
+    color        : #fff;
+    border-radius: 5px;
+    padding      : 10px 25px;
+    font-family  : 'Lato', sans-serif;
+    font-weight  : 500;
+    background   : transparent;
+    cursor       : pointer;
+    transition   : all 0.3s ease;
+    position     : relative;
+    display      : inline-block;
+    box-shadow   : inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+/* 2 */
+.btn-2 {
+    background: rgb(96, 9, 240);
+    background: linear-gradient(0deg, rgba(96, 9, 240, 1) 0%, rgba(129, 5, 240, 1) 100%);
+    border    : none;
+
+}
+
+.btn-2:before {
+    height: 0%;
+    width : 2px;
+}
+
+.btn-2:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+        -4px -4px 6px 0 rgba(116, 125, 136, .5),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+
+/* 3 */
+.btn-3 {
+    background : rgb(0, 172, 238);
+    background : linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+    width      : 130px;
+    height     : 40px;
+    line-height: 42px;
+    padding    : 0;
+    border     : none;
+
+}
+
+.btn-3 span {
+    position: relative;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+}
+
+.btn-3:before,
+.btn-3:after {
+    position  : absolute;
+    content   : &quot;&quot;;
+    right     : 0;
+    top       : 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+}
+
+.btn-3:before {
+    height: 0%;
+    width : 2px;
+}
+
+.btn-3:after {
+    width : 0%;
+    height: 2px;
+}
+
+.btn-3:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-3:hover:before {
+    height: 100%;
+}
+
+.btn-3:hover:after {
+    width: 100%;
+}
+
+.btn-3 span:hover {
+    color: rgba(2, 126, 251, 1);
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+    position  : absolute;
+    content   : &quot;&quot;;
+    left      : 0;
+    bottom    : 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+}
+
+.btn-3 span:before {
+    width : 2px;
+    height: 0%;
+}
+
+.btn-3 span:after {
+    width : 0%;
+    height: 2px;
+}
+
+.btn-3 span:hover:before {
+    height: 100%;
+}
+
+.btn-3 span:hover:after {
+    width: 100%;
+}
+
+/* 4 */
+.btn-4 {
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    line-height     : 42px;
+    padding         : 0;
+    border          : none;
+}
+
+.btn-4:hover {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+
+.btn-4 span {
+    position: relative;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+}
+
+.btn-4:before,
+.btn-4:after {
+    position: absolute;
+    content : &quot;&quot;;
+    right   : 0;
+    top     : 0;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .9),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .9),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-4:before {
+    height: 0%;
+    width : .1px;
+}
+
+.btn-4:after {
+    width : 0%;
+    height: .1px;
+}
+
+.btn-4:hover:before {
+    height: 100%;
+}
+
+.btn-4:hover:after {
+    width: 100%;
+}
+
+.btn-4 span:before,
+.btn-4 span:after {
+    position: absolute;
+    content : &quot;&quot;;
+    left    : 0;
+    bottom  : 0;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .9),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .9),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-4 span:before {
+    width : .1px;
+    height: 0%;
+}
+
+.btn-4 span:after {
+    width : 0%;
+    height: .1px;
+}
+
+.btn-4 span:hover:before {
+    height: 100%;
+}
+
+.btn-4 span:hover:after {
+    width: 100%;
+}
+
+/* 5 */
+.btn-5 {
+    width      : 130px;
+    height     : 40px;
+    line-height: 42px;
+    padding    : 0;
+    border     : none;
+    background : rgb(255, 27, 0);
+    background : linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+}
+
+.btn-5:hover {
+    color     : #f0094a;
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-5:before,
+.btn-5:after {
+    content   : '';
+    position  : absolute;
+    top       : 0;
+    right     : 0;
+    height    : 2px;
+    width     : 0;
+    background: #f0094a;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.btn-5:after {
+    right : inherit;
+    top   : inherit;
+    left  : 0;
+    bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+    width     : 100%;
+    transition: 800ms ease all;
+}
+
+
+/* 6 */
+.btn-6 {
+    background : rgb(247, 150, 192);
+    background : radial-gradient(circle, rgba(247, 150, 192, 1) 0%, rgba(118, 174, 241, 1) 100%);
+    line-height: 42px;
+    padding    : 0;
+    border     : none;
+}
+
+.btn-6 span {
+    position: relative;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+}
+
+.btn-6:before,
+.btn-6:after {
+    position: absolute;
+    content : &quot;&quot;;
+    height  : 0%;
+    width   : 1px;
+    box-shadow:
+        -1px -1px 20px 0px rgba(255, 255, 255, 1),
+        -4px -4px 5px 0px rgba(255, 255, 255, 1),
+        7px 7px 20px 0px rgba(0, 0, 0, .4),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+}
+
+.btn-6:before {
+    right     : 0;
+    top       : 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:after {
+    left      : 0;
+    bottom    : 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:hover {
+    background: transparent;
+    color     : #76aef1;
+    box-shadow: none;
+}
+
+.btn-6:hover:before {
+    transition: all 500ms ease;
+    height    : 100%;
+}
+
+.btn-6:hover:after {
+    transition: all 500ms ease;
+    height    : 100%;
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
+    position: absolute;
+    content : &quot;&quot;;
+    box-shadow:
+        -1px -1px 20px 0px rgba(255, 255, 255, 1),
+        -4px -4px 5px 0px rgba(255, 255, 255, 1),
+        7px 7px 20px 0px rgba(0, 0, 0, .4),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+}
+
+.btn-6 span:before {
+    left      : 0;
+    top       : 0;
+    width     : 0%;
+    height    : .5px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:after {
+    right     : 0;
+    bottom    : 0;
+    width     : 0%;
+    height    : .5px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:hover:before {
+    width: 100%;
+}
+
+.btn-6 span:hover:after {
+    width: 100%;
+}
+
+/* 7 */
+.btn-7 {
+    background : linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+    line-height: 42px;
+    padding    : 0;
+    border     : none;
+}
+
+.btn-7 span {
+    position: relative;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+}
+
+.btn-7:before,
+.btn-7:after {
+    position  : absolute;
+    content   : &quot;&quot;;
+    right     : 0;
+    bottom    : 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-7:before {
+    height: 0%;
+    width : 2px;
+}
+
+.btn-7:after {
+    width : 0%;
+    height: 2px;
+}
+
+.btn-7:hover {
+    color     : rgba(251, 75, 2, 1);
+    background: transparent;
+}
+
+.btn-7:hover:before {
+    height: 100%;
+}
+
+.btn-7:hover:after {
+    width: 100%;
+}
+
+.btn-7 span:before,
+.btn-7 span:after {
+    position  : absolute;
+    content   : &quot;&quot;;
+    left      : 0;
+    top       : 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-7 span:before {
+    width : 2px;
+    height: 0%;
+}
+
+.btn-7 span:after {
+    height: 2px;
+    width : 0%;
+}
+
+.btn-7 span:hover:before {
+    height: 100%;
+}
+
+.btn-7 span:hover:after {
+    width: 100%;
+}
+
+/* 8 */
+.btn-8 {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    line-height     : 42px;
+    padding         : 0;
+    border          : none;
+}
+
+.btn-8 span {
+    position: relative;
+    display : block;
+    width   : 100%;
+    height  : 100%;
+}
+
+.btn-8:before,
+.btn-8:after {
+    position    : absolute;
+    content     : &quot;&quot;;
+    right       : 0;
+    bottom      : 0;
+    background  : #c797eb;
+    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+    transition  : all 0.3s ease;
+}
+
+.btn-8:before {
+    height: 0%;
+    width : 2px;
+}
+
+.btn-8:after {
+    width : 0%;
+    height: 2px;
+}
+
+.btn-8:hover:before {
+    height: 100%;
+}
+
+.btn-8:hover:after {
+    width: 100%;
+}
+
+.btn-8:hover {
+    background: transparent;
+}
+
+.btn-8 span:hover {
+    color: #c797eb;
+}
+
+.btn-8 span:before,
+.btn-8 span:after {
+    position    : absolute;
+    content     : &quot;&quot;;
+    left        : 0;
+    top         : 0;
+    background  : #c797eb;
+    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+    transition  : all 0.3s ease;
+}
+
+.btn-8 span:before {
+    width : 2px;
+    height: 0%;
+}
+
+.btn-8 span:after {
+    height: 2px;
+    width : 0%;
+}
+
+.btn-8 span:hover:before {
+    height: 100%;
+}
+
+.btn-8 span:hover:after {
+    width: 100%;
+}
+
+
+
+
+/* 11 */
+.btn-11 {
+    border    : none;
+    background: rgb(251, 33, 117);
+    background: linear-gradient(0deg, rgba(251, 33, 117, 1) 0%, rgba(234, 76, 137, 1) 100%);
+    color     : #fff;
+    overflow  : hidden;
+}
+
+.btn-11:hover {
+    text-decoration: none;
+    color          : #fff;
+}
+
+.btn-11:before {
+    position        : absolute;
+    content         : '';
+    display         : inline-block;
+    top             : -180px;
+    left            : 0;
+    width           : 30px;
+    height          : 100%;
+    background-color: #fff;
+    animation       : shiny-btn1 3s ease-in-out infinite;
+}
+
+.btn-11:hover {
+    opacity: .7;
+}
+
+.btn-11:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@keyframes shiny-btn1 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity          : 0;
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity          : 0.5;
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity          : 1;
+    }
+
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity          : 0;
+    }
+}
+
+/* 12 */
+.btn-12 {
+    position           : relative;
+    right              : 20px;
+    bottom             : 20px;
+    border             : none;
+    box-shadow         : none;
+    width              : 130px;
+    height             : 40px;
+    line-height        : 42px;
+    -webkit-perspective: 230px;
+    perspective        : 230px;
+}
+
+.btn-12 span {
+    background: rgb(0, 172, 238);
+    background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+    display   : block;
+    position  : absolute;
+    width     : 130px;
+    height    : 40px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    border-radius     : 5px;
+    margin            : 0;
+    text-align        : center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+    -webkit-transition: all .3s;
+    transition        : all .3s;
+}
+
+.btn-12 span:nth-child(1) {
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    -webkit-transform       : rotateX(90deg);
+    -moz-transform          : rotateX(90deg);
+    transform               : rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin   : 50% 50% -20px;
+    transform-origin        : 50% 50% -20px;
+}
+
+.btn-12 span:nth-child(2) {
+    -webkit-transform       : rotateX(0deg);
+    -moz-transform          : rotateX(0deg);
+    transform               : rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin   : 50% 50% -20px;
+    transform-origin        : 50% 50% -20px;
+}
+
+.btn-12:hover span:nth-child(1) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform   : rotateX(0deg);
+    transform        : rotateX(0deg);
+}
+
+.btn-12:hover span:nth-child(2) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    color            : transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform   : rotateX(-90deg);
+    transform        : rotateX(-90deg);
+}
+
+
+/* 13 */
+.btn-13 {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border          : none;
+    z-index         : 1;
+}
+
+.btn-13:after {
+    position        : absolute;
+    content         : &quot;&quot;;
+    width           : 100%;
+    height          : 0;
+    bottom          : 0;
+    left            : 0;
+    z-index         : -1;
+    border-radius   : 5px;
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    box-shadow      :
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.btn-13:hover {
+    color: #fff;
+}
+
+.btn-13:hover:after {
+    top   : 0;
+    height: 100%;
+}
+
+.btn-13:active {
+    top: 2px;
+}
+
+
+/* 14 */
+.btn-14 {
+    background: rgb(255, 151, 0);
+    border    : none;
+    z-index   : 1;
+}
+
+.btn-14:after {
+    position        : absolute;
+    content         : &quot;&quot;;
+    width           : 100%;
+    height          : 0;
+    top             : 0;
+    left            : 0;
+    z-index         : -1;
+    border-radius   : 5px;
+    background-color: #eaf818;
+    background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+    box-shadow      : inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+.btn-14:hover {
+    color: #000;
+}
+
+.btn-14:hover:after {
+    top   : auto;
+    bottom: 0;
+    height: 100%;
+}
+
+.btn-14:active {
+    top: 2px;
+}
+
+/* 15 */
+.btn-15 {
+    background: #b621fe;
+    border    : none;
+    z-index   : 1;
+}
+
+.btn-15:after {
+    position        : absolute;
+    content         : &quot;&quot;;
+    width           : 0;
+    height          : 100%;
+    top             : 0;
+    right           : 0;
+    z-index         : -1;
+    background-color: #663dff;
+    border-radius   : 5px;
+    box-shadow      : inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+    color: #fff;
+}
+
+.btn-15:hover:after {
+    left : 0;
+    width: 100%;
+}
+
+.btn-15:active {
+    top: 2px;
+}
+
+
+/* 16 */
+.btn-16 {
+    background: #0fad44;
+    border    : none;
+    z-index   : 1;
+}
+
+.btn-16:after {
+    position        : absolute;
+    content         : &quot;&quot;;
+    width           : 100%;
+    height          : 100%;
+    top             : 0;
+    right           : 0;
+    z-index         : -1;
+    background-color: #11ad8b;
+    border-radius   : 5px;
+    box-shadow      : inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+.btn-16:hover {
+    color: #fff;
+}
+
+.btn-16:hover:after {
+    left : 0;
+    width: 0%;
+}
+
+.btn-16:active {
+    top: 2px;
+}
+</code></pre>
+
+                </div>
+
+
+                <div class="col-lg-3 d-none d-lg-block">
+                  
+                    <div class="clearfix"
+                      style="position: relative; border-radius: 1.45rem; overflow: hidden; margin-bottom: 25px;">
+                      <img class="post-feature-image" src="https://s3.ax1x.com/2021/02/17/ygqSBQ.png" alt="">
+                      <div class="mask-dark"></div>
+                    </div>
+                    
+
+                      <div class="toc-container">
+                        <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#1%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E9%A3%8E%E6%A0%BC%E6%8C%89%E9%92%AE">1.赛博朋克风格按钮</a></li>
+<li><a href="#2ios%E5%BC%80%E5%85%B3">2.ios开关</a></li>
+<li><a href="#3%E5%88%86%E8%A3%82%E6%96%87%E5%AD%97%E6%95%88%E6%9E%9C">3.分裂文字效果</a></li>
+<li><a href="#4%E6%B5%81%E5%85%89%E6%BA%A2%E5%BD%A9">4.流光溢彩</a></li>
+<li><a href="#5%E5%86%85%E6%97%8B%E6%95%88%E6%9E%9C">5.内旋效果</a></li>
+<li><a href="#6%E5%A4%9A%E7%A7%8D%E6%95%88%E6%9E%9C1">6.多种效果(1)</a></li>
+</ul>
+</li>
+</ul>
+
+                      </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="post-footer">
+          
+            <div class="prev-post">
+              <a href="https://wskkku.github.io/post/htmllessgreateryi-dong-duan/">
+                <h3 class="post-title title">
+                  上一篇 HTML&lt;移动端基础/&gt;
+                </h3>
+              </a>
+            </div>
+            
+              
+                <div class="next-post">
+                  <a href="https://wskkku.github.io/post/pythonlessgreater/">
+                    <h3 class="post-title title">
+                      下一篇 Python&lt;/&gt;
+                    </h3>
+                  </a>
+                </div>
+                
+        </div>
+
+        
+
+                        <div id="vcomments"></div>
+
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'A4Yuu3vW8F2xf8KEhe1MjavD-gzGzoHsz',
+        appKey: 'aGlB6mIznGkQgMmrNMA4cDNL',
+        avatar: 'wavatar',
+        // 设置Bilibili表情包地址
+        emojiCDN: '//i0.hdslb.com/bfs/emote/',
+        // 表情title和图片映射
+        emojiMaps: {
+            "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+            "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+            "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+            "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+            "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+            "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+            "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+            "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+            "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+            "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+            "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+            "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+            "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+            "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+            "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+            "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+            "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+            "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+            "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+            "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+            "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+            "tv_白眼": "c1d59f439e379ee50eef488bcb5e5378e5044ea4.png",
+            "tv_难过": "87f46748d3f142ebc6586ff58860d0e2fc8263ba.png",
+            "tv_生气": "26702dcafdab5e8225b43ffd23c94ac1ff932654.png",
+            "tv_斜眼笑": "911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png",
+            "tv_疑问": "0793d949b18d7be716078349c202c15ff166f314.png",
+            "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png",
+            "tv_抠鼻": "c666f55e88d471e51bbd9fab9bb308110824a6eb.png",
+            "tv_流泪": "7e71cde7858f0cd50d74b0264aa26db612a8a167.png",
+            "tv_抓狂": "fe31c08edad661d63762b04e17b8d5ae3c71a757.png"
+            // ... 更多表情
+        }
+    })
+</script>
+
+
+      </div>
+      </div>
+
+      <div class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="detial">
+           <ul>
+                    <li>by RoI</li>
+                    <li class="spacer">/</li>
+                    <li>from 2021</li>
+                    <li class="spacer">/</li>
+                    <li> Powered by <a href="https://github.com/getgridea/gridea" target="_blank">&nbsp;Gridea</a></li>
+                </ul>
+
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="about-me">
+          <div class="avator"
+            style="background: url('https://wskkku.github.io/images/avatar.png?v=1620542340737');background-size: cover;">
+            <div class="mask-dark"></div>
+          </div>
+          <div class="social-link">
+            
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-github-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-twitter-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-weibo-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-zhihu-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-facebook-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-wechat-line"></i>
+                </a>
+                
+                  
+              
+                <a href="s" class="clearfix" target="_blank">
+                  <i class="ri-qq-line"></i>
+                </a>
+                
+                  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+          <script>
+            hljs.initHighlightingOnLoad()
+
+            let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+            // This should probably be throttled.
+            // Especially because it triggers during smooth scrolling.
+            // https://lodash.com/docs/4.17.10#throttle
+            // You could do like...
+            // window.addEventListener("scroll", () => {
+            //    _.throttle(doThatStuff, 100);
+            // });
+            // Only not doing it here to keep this Pen dependency-free.
+
+
+            window.addEventListener("scroll", event => {
+              let fromTop = window.scrollY;
+
+              mainNavLinks.forEach((link, index) => {
+                let section = document.getElementById(decodeURI(link.hash).substring(1));
+                let nextSection = null
+                var $link = $(link)
+
+                if (mainNavLinks[index + 1]) {
+                  nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+                }
+                if (section.offsetTop <= fromTop) {
+                  if (nextSection) {
+                    if (nextSection.offsetTop > fromTop) {
+                      $link.addClass('current')
+                    } else {
+                      $link.removeClass('current')
+                    }
+                  } else {
+                    $link.addClass('current')
+                  }
+                } else {
+                  $link.removeClass('current')
+                }
+              });
+            });
+
+
+          </script>
+</body>
+
+</html>

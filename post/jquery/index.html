@@ -5,7 +5,7 @@
 <meta name="viewport"
   content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 <title>
-  关于 | RoFty
+  jQuery | RoFty
 </title>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
@@ -21,7 +21,7 @@
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://wskkku.github.io/styles/main.css">
 
-<link rel="alternate" type="application/atom+xml" title="关于 | RoFty - Atom Feed"
+<link rel="alternate" type="application/atom+xml" title="jQuery | RoFty - Atom Feed"
   href="https://wskkku.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -62,14 +62,12 @@
           <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
             
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
+    <meta name="description" content="jQuery 是一个 JavaScript 库。
+jQuery 极大地简化了 JavaScript 编程。
 
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
+库
+cookie 库
+&lt;script src=&quot;//cdn.bootcss.com/jquery-cookie/1..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
@@ -263,15 +261,15 @@
       <div class="container">
 
         <h2 class="post-title title">
-          关于
+          jQuery
         </h2>
 
         <div class="post-info">
           <span>
-            2019-01-25
+            2021-04-24
           </span>
           <span>
-            31 字数
+            190 字数
           </span>
           <br>
           
@@ -284,13 +282,41 @@
             <div class="post-content-wrapper">
               <div class="row">
                 <div class="post-content  col-lg-9">
-                  <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                  <p>jQuery 是一个 JavaScript 库。<br>
+jQuery 极大地简化了 JavaScript 编程。</p>
+<!-- more -->
+<h1 id="库">库</h1>
+<h2 id="cookie-库">cookie 库</h2>
+<pre><code>&lt;script src=&quot;//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>创建cookie</p>
+<pre><code>$.cookie('name'，'dumplings')
+$.cookie('name'，'dumplings', {domain:'qq.com'});   //设置一个值为'dumplings'的在域名'qq.com'的cookie
+$.cookie('name'，'dumplings', {domain:'qq.com'});   //设置一个值为'dumplings'的在域名'qq.com'的cookie
+</code></pre>
+<p>删除cookie</p>
+<pre><code>$.removeCookie('name',{ path: '/'}); //path为指定路径，直接删除该路径下的cookie
+$.cookie('name',null,{ path: '/'}); //将cookie名为‘openid’的值设置为空，实际已删除
+</code></pre>
+<p>获取cookie</p>
+<pre><code>$.cookie('name') 
+</code></pre>
+<h2 id="解析-url">解析 url</h2>
+<pre><code>var xx = $.getUrlParam('对象');
+</code></pre>
+<h1 id="jquery-转换成-dom-对象">jQuery 转换成 Dom 对象</h1>
+<pre><code>var $div = $('div')
+var div = $div[0]
+
+var div2 = $div.get(1)
+</code></pre>
+<h1 id="n-个元素">N 个元素</h1>
+<h2 id="选择第-n-个元素">选择第 N 个元素</h2>
+<pre><code>变量.eq(序号)
+</code></pre>
+<h2 id="判断为第-n-个元素">判断为第 N 个元素</h2>
+<pre><code>变量.index(this)
+</code></pre>
 
                 </div>
 
@@ -300,12 +326,17 @@
 
                       <div class="toc-container">
                         <ul class="markdownIt-TOC">
-<li>
+<li><a href="#%E5%BA%93">库</a>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
+<li><a href="#cookie-%E5%BA%93">cookie 库</a></li>
+<li><a href="#%E8%A7%A3%E6%9E%90-url">解析 url</a></li>
+</ul>
+</li>
+<li><a href="#jquery-%E8%BD%AC%E6%8D%A2%E6%88%90-dom-%E5%AF%B9%E8%B1%A1">jQuery 转换成 Dom 对象</a></li>
+<li><a href="#n-%E4%B8%AA%E5%85%83%E7%B4%A0">N 个元素</a>
+<ul>
+<li><a href="#%E9%80%89%E6%8B%A9%E7%AC%AC-n-%E4%B8%AA%E5%85%83%E7%B4%A0">选择第 N 个元素</a></li>
+<li><a href="#%E5%88%A4%E6%96%AD%E4%B8%BA%E7%AC%AC-n-%E4%B8%AA%E5%85%83%E7%B4%A0">判断为第 N 个元素</a></li>
 </ul>
 </li>
 </ul>
@@ -319,7 +350,23 @@
 
         <div class="post-footer">
           
+            <div class="prev-post">
+              <a href="https://wskkku.github.io/post/ajax/">
+                <h3 class="post-title title">
+                  上一篇 AJAX
+                </h3>
+              </a>
+            </div>
+            
               
+                <div class="next-post">
+                  <a href="https://wskkku.github.io/post/bootstrap/">
+                    <h3 class="post-title title">
+                      下一篇 BootStrap
+                    </h3>
+                  </a>
+                </div>
+                
         </div>
 
         

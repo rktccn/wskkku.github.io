@@ -5,7 +5,7 @@
 <meta name="viewport"
   content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 <title>
-  关于 | RoFty
+  Javascript&lt;实例/&gt; | RoFty
 </title>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
@@ -21,7 +21,7 @@
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://wskkku.github.io/styles/main.css">
 
-<link rel="alternate" type="application/atom+xml" title="关于 | RoFty - Atom Feed"
+<link rel="alternate" type="application/atom+xml" title="Javascript&lt;实例/&gt; | RoFty - Atom Feed"
   href="https://wskkku.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -62,15 +62,14 @@
           <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
             
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
+    <meta name="description" content="javascritp基础实例框架
 
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
-    <meta name="keywords" content="" />
+1.倒计时
+function countDown(time) {
+    var nowTime = +new Date()
+    var inputTime = +new Date(time)
+   ..." />
+    <meta name="keywords" content="编程,JavaScript" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -263,18 +262,26 @@
       <div class="container">
 
         <h2 class="post-title title">
-          关于
+          Javascript&lt;实例/&gt;
         </h2>
 
         <div class="post-info">
           <span>
-            2019-01-25
+            2021-02-26
           </span>
           <span>
-            31 字数
+            239 字数
           </span>
           <br>
           
+            <a href="https://wskkku.github.io/tag/L6rtCvsbFL/" class="post-tag">
+              # 编程
+            </a>
+            
+            <a href="https://wskkku.github.io/tag/JDpSR67RO/" class="post-tag">
+              # JavaScript
+            </a>
+            
         </div>
 
 
@@ -284,28 +291,97 @@
             <div class="post-content-wrapper">
               <div class="row">
                 <div class="post-content  col-lg-9">
-                  <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                  <p>javascritp基础实例框架</p>
+<!-- more -->
+<h3 id="1倒计时">1.倒计时</h3>
+<pre><code>function countDown(time) {
+    var nowTime = +new Date()
+    var inputTime = +new Date(time)
+    var times = (inputTime - nowTime) / 1000
+    var day = parseInt(times / 60 / 60 / 24)
+    var hour = parseInt(times / 60 / 60 % 24)
+    var minute = parseInt(times / 60 % 60)
+    var second = parseInt(times % 60)
+    return day + 'days' + hour + 'hours' + minute + 'minutes' + second+'seconds'
+}
+</code></pre>
+<h3 id="2冒泡排序">2.冒泡排序</h3>
+<pre><code>var arr = [1, 3, 7, 12, 77, 6, 21]
+arr.sort(function (a, b) {
+    return a - b  //升序
+    return b - a  //降序
+})
+</code></pre>
+<h3 id="3数组去重">3.数组去重</h3>
+<pre><code>function unique(arr) {
+    var newArr = []
+    for (var i = 0; i &lt; arr.length; i++) {
+        if (newArr.indexOf(arr[i]) == -1) {
+            newArr.push(arr[i])
+        }
+    }
+    return newArr
+}
+</code></pre>
+<h3 id="4统计字符出现次数">4.统计字符出现次数</h3>
+<pre><code>var str ='avasdbasdhasdf'
+var o = {}
+for (var i = 0; i &lt; str.length; i++) {
+    var chars = str.charAt(i)
+    if (o[chars]) {
+        o[chars]++
+    } else {
+        o[chars] = 1
+    }
+}
+</code></pre>
+<h3 id="5获取鼠标元素内坐标">5.获取鼠标元素内坐标</h3>
+<pre><code>var box = document.querySelector('.box')
+
+box.addEventListener('mousemove', function (e) {
+    var x = e.pageX - this.offsetLeft
+    var y = e.pageY - this.offsetTop
+    this.innerHTML = 'X:' + x + ' Y:' + y
+})
+</code></pre>
+<h3 id="6-焦点图效果">6. 焦点图效果</h3>
+<p><a href="https://cdn.jsdelivr.net/gh/wskkku/wskkku.github.io@main/js/swiper-bundle.min.js">js效果</a><br>
+<a href="https://cdn.jsdelivr.net/gh/wskkku/wskkku.github.io@main/css/swiper-bundle.min.css">css效果</a><br>
+<a href="https://www.swiper.com.cn/usage/index.html">参考文档</a></p>
+<h3 id="7更多实例">7.更多实例</h3>
+<p><a href="https://codepen.io/Bluedcraft/pen/QWGoYjK">选项卡</a><br>
+<a href="https://codepen.io/Bluedcraft/pen/eYBoOOR">下拉菜单</a><br>
+<a href="https://codepen.io/Bluedcraft/pen/MWbMPoK">发送验证码</a><br>
+<a href="https://codepen.io/Bluedcraft/pen/eYgObbx">拖拽窗口</a><br>
+<a href="https://codepen.io/Bluedcraft/pen/poRomZY">放大镜效果</a></p>
 
                 </div>
 
 
                 <div class="col-lg-3 d-none d-lg-block">
                   
+                    <div class="clearfix"
+                      style="position: relative; border-radius: 1.45rem; overflow: hidden; margin-bottom: 25px;">
+                      <img class="post-feature-image" src="https://s3.ax1x.com/2021/02/16/ygPW7V.png" alt="">
+                      <div class="mask-dark"></div>
+                    </div>
+                    
 
                       <div class="toc-container">
                         <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
+<li>
+<ul>
+<li><a href="#1%E5%80%92%E8%AE%A1%E6%97%B6">1.倒计时</a></li>
+<li><a href="#2%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F">2.冒泡排序</a></li>
+<li><a href="#3%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D">3.数组去重</a></li>
+<li><a href="#4%E7%BB%9F%E8%AE%A1%E5%AD%97%E7%AC%A6%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0">4.统计字符出现次数</a></li>
+<li><a href="#5%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E5%85%83%E7%B4%A0%E5%86%85%E5%9D%90%E6%A0%87">5.获取鼠标元素内坐标</a></li>
+<li><a href="#6-%E7%84%A6%E7%82%B9%E5%9B%BE%E6%95%88%E6%9E%9C">6. 焦点图效果</a></li>
+<li><a href="#7%E6%9B%B4%E5%A4%9A%E5%AE%9E%E4%BE%8B">7.更多实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -319,7 +395,23 @@
 
         <div class="post-footer">
           
+            <div class="prev-post">
+              <a href="https://wskkku.github.io/post/ghj-de-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he-feng-ge-he/">
+                <h3 class="post-title title">
+                  上一篇 JavaScript&lt;/&gt;
+                </h3>
+              </a>
+            </div>
+            
               
+                <div class="next-post">
+                  <a href="https://wskkku.github.io/post/htmllessgreateryi-dong-duan/">
+                    <h3 class="post-title title">
+                      下一篇 HTML&lt;移动端基础/&gt;
+                    </h3>
+                  </a>
+                </div>
+                
         </div>
 
         
